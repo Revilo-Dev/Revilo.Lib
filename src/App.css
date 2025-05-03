@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+nav {
+  background-color: #0000006b;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  gap: 10px;
+  top: 0;
+  left: 0;
+  align-content: center;
+}
+
+a {
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  z-index: 20;
+  width: 150px;
+  border-radius: 20%;
+}
+
+.logo {
+  padding: 5px;
+  padding-bottom: 0;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+  -webkit-user-drag: none;
+  position: relative;
+}
+
+
+
+
