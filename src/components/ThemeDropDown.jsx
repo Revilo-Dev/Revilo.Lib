@@ -14,7 +14,7 @@ function ThemeDropdown() {
 
   return (
     <div className="dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-Ghost">
+      <div tabIndex={0} role="button" className="btn btn-primary">
       <LayoutGrid />
       </div>
       <ul
