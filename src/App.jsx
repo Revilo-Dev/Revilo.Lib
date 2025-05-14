@@ -15,14 +15,14 @@ function App() {
         
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/Features">Features</Link>
+          <Link to="/Projects">Projects</Link>
           <Link to="/Links">Links</Link>
           <ThemeDropdown />
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Features" element={<Features />} />
+          <Route path="/Projects" element={<Projects />} />
           <Route path="/Links" element={<Links />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
@@ -70,7 +70,7 @@ function Home() {
   )
 }
 
-function Features() {
+function Projects() {
   return (
     <div className='body'>
       <div className='logo'>
