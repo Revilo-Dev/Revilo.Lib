@@ -1,38 +1,39 @@
 import React from 'react';
+import HeaderCard from '../components/HeaderCard';
+import InfoCard from '../components/InfoCard';
 
 function Home() {
 
     return (
       <>
-      {/*body*/}
-      <div className='body'>
-      {/*title*/}
-        <div>
-          <div className='logo'>
-          <img  src='src/assets/logo.png'></img>
-          </div>
-          <h1><b>Revilo.Lib</b></h1>
-          <p >React Web Development Library</p>
+      <div className="body flex flex-col w-full">
+        <div className="mt-16 w-full">
+          <HeaderCard/>
         </div>
+        <br></br>
+        <div className="content w-14/15 A-SlideUp">
+
+        <InfoCard
+          title={"About"}
+          subtitle={"About Revilo.lib"}
+          description={"Revilo.Lib Was created to speed up development by creating a starting framework of organized easy to use features that could be reused for a wide variety of projects. "}
+        />
+
+        <InfoCard
+        title={"Features"}
+        subtitle={"Revilo.Lib Features"}
+        row1={<p><b>Components:</b> Many built in Easy to use, customizable, Multipurpose Components</p>}
+        row2={<p><b>Themes/Theme Picker:</b> 29 Themes with an Included Theme Picker</p>}
+        row3={<p><b>Animations:</b> Many Included Animations for hover, focus and more. all Easy to use and edit</p>}
+        />
   
-        <div>
-          <h3>Apps built in Revilo.Lib</h3>
-        </div>
-  
-        <div className="wrapper">
-          <a className="item item1" href='https://revilodev.web.app/'><h3>Revilo.Dev.Com</h3></a>
-          <a className="item item2" href='https://stacks-j2s9.onrender.com/'><h3>Stacks - Chat App</h3></a>
-          <a className="item item3" href='https://itch-webgames.web.app/'><h3>Itch.WebGames</h3></a>
-          <a className="item item4" href='https://revilodev.web.app/'><h3>Revilo.Dev.Com</h3></a>
-          <a className="item item5" href='https://stacks-j2s9.onrender.com/'><h3>Stacks - Chat App</h3></a>
-          <a className="item item6" href='https://itch-webgames.web.app/'><h3>Itch.WebGames</h3></a>
-          <a className="item item7" href='https://revilodev.web.app/'><h3>Revilo.Dev.Com</h3></a>
-          <a className="item item8" href='https://stacks-j2s9.onrender.com/'><h3>Stacks - Chat App</h3></a>
-        </div>
-        
-        
+        <InfoCard
+        title={"Plugins"}
+        subtitle={"All availible Plugins"}
+        row1={<p>React <b>:</b> Tailwind <b>:</b> DaisyUI <b>:</b> Lucide</p>}
+        />
       </div>
-  
+      </div>
       </>
     )
   }

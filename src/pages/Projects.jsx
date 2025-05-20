@@ -1,22 +1,26 @@
 import React from 'react';
+import HeaderCard from '../components/HeaderCard';
 
 function Projects() {
     return (
-      <div className='body'>
-        <div className='logo'>
-          <img  src='src/assets/logo.png'></img>
+      <div className='body h-screen'>
+      <div className="flex flex-col w-full ">
+        <div className="mt-16 w-full">
+          <HeaderCard/>
         </div>
-        <h1>Features</h1>
-        <h3>All Features and fucntions of Revilo.Lib</h3>
-        <br></br>
-        <h2>DaisyUI Themes</h2>
-        <p>All 29 DaisyUI themes with prefrence and local save system</p>
-        <br></br>
-        <h2>DaisyUI Themes</h2>
-        <p>All 29 DaisyUI themes with prefrence and local save system</p>
-  
-  
       </div>
+
+      
+      <div className="A-SlideUp m-top-5 w-full h-full flex justify-center items-center">
+
+        <h1 className='justify-center' >Nothing here... Yet</h1>
+
+      </div>
+
+
+
+      </div>
+
     );
   }
 

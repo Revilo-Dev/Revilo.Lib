@@ -1,14 +1,28 @@
 import React from 'react';
+import HeaderCard from '../components/HeaderCard';
+import InfoCard from '../components/InfoCard';
 
 function Links() {
     return (
-      <div className='body'>
-        <div className='logo'>
-          <img  src='src/assets/logo.png'></img>
+      <>
+        <div className="body flex flex-col w-full h-screen">
+          <div className="mt-16 w-full">
+            <HeaderCard/>
+          </div>
+          <br></br>
+          <div className="content w-14/15">
+
+          <InfoCard
+            title={"title"}
+            img={"src/assets/revilo.lib.png"}
+            imgAlt={"alt"}
+          />
+
+
+    
         </div>
-        <h1>Links</h1>
-        <h3>Socials, projects, ect</h3>
-      </div>
+        </div>
+      </>
     );
   }
 
